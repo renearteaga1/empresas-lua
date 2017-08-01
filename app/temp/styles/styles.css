@@ -505,6 +505,11 @@ a {
     }
     }
 
+.large-hero--blue {
+        color:#D9853B;
+        text-shadow: 2px 2px 0 rgba(0, 28, 125, .6);
+    }
+
 .large-hero__subtitle {
         font-weight: 300;
         color: #001C7D;
@@ -1080,5 +1085,14 @@ a {
     background-position: 36.69752421959096% 45.792307692307695%;
 }
 
+.actividades {
+    background-color: rgba(249, 249, 249, .9);
+    padding: 0 0px 1px 0px;
+    margin-bottom: 98px;
+}
+
+.actividades a {
+        text-decoration: none;
+    }
 
 

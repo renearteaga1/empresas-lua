@@ -27,6 +27,11 @@
         }
 
     }
+    
+    &--blue {
+        color:$orange2;
+        text-shadow: 2px 2px 0 rgba(0, 28, 125, .6);
+    }
 
     &__subtitle {
         font-weight: 300;

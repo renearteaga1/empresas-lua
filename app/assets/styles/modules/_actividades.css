@@ -1,0 +1,9 @@
+.actividades {
+    background-color: rgba(249, 249, 249, .9);
+    padding: 0 0px 1px 0px;
+    margin-bottom: 98px;
+    
+    a {
+        text-decoration: none;
+    }
+}
