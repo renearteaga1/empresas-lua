@@ -18,12 +18,12 @@
     &__title {
         font-weight: 500;
         color: $orange2;
-        text-shadow: 2px 2px 0 rgba(0, 0, 0, .1);
+        text-shadow: 2px 2px 0 rgba(0, 28, 125, .6);
         margin:0;
         font-size: 2.4rem;
 
         @mixin atSmall {
-            font-size: 4.8rem;
+            font-size: 5.4rem;
         }
 
     }

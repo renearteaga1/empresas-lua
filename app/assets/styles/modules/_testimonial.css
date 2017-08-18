@@ -23,6 +23,11 @@
         border: 6px solid rgba(255, 255, 255, .8);       
     }
     
+     &__img {
+      width:15%;
+      height: auto;
+    }
+    
     &__title {
         color: $mainBlue;
         text-align: center;
