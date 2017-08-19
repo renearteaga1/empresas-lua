@@ -1,7 +1,8 @@
 .testimonial {
     background-color: rgba(255, 255, 255, .8);
-    padding: 0 18px 1px 18px;
+    padding: 0 15px 1px 18px;
     margin-bottom: 98px;
+    width: 100%;
     
     @mixin atLarge {
         margin-bottom: 0;
@@ -43,4 +44,57 @@
         font-size: 0.9375rem;
         margin: .25rem 0 1rem 0;
     }
+    
+    &__contact-info {
+        padding: 9px;
+        width: 100%;      
+        transform: translateX(12%);
+        
+        @mixin atSmall {
+            padding: 9px;
+            width: 100%;      
+            transform: translateX(30%);
+        }
+    
+        
+         @mixin atLarge {
+            padding: 9px;
+            width: 20rem;
+            transform: none;
+        }
+        
+        
+        ul {
+            display: block;
+            list-style: none;
+
+            @mixin clearfix;
+        }
+
+        li{
+            margin-bottom: 12px;
+            padding-bottom: 9px;
+            
+            @mixin atLarge {
+                margin-bottom: 12px;
+                padding-bottom: 9px;
+            }
+        }
+        
+         img {
+            width: 2rem;
+        }
+    }
+    
+    &__map {
+        width: 100%;
+        
+        
+        @mixin atLarge {
+            margin-top: -6rem;
+            width: 100%;
+        }
+        
+    }
+
 }

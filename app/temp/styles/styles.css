@@ -476,6 +476,7 @@ a {
 
 .large-hero__image{
         display: block;
+        
     }
 
 .large-hero__text-content {
@@ -512,9 +513,9 @@ a {
 
 .large-hero__subtitle {
         font-weight: 300;
-        color: #001C7D;
+        color: #ff6b6b;
         text-shadow: 2px 2px 0 rgba(0, 28, 125, .1);
-        font-size: 1.5rem;
+        font-size: 1.1rem;
         margin: 0;
     }
 
@@ -526,9 +527,9 @@ a {
     }
 
 .large-hero__description {
-        color: #fff;
-        font-size: 1.1rem;
-        font-weight: 100;
+        color: #FFF;
+        font-size: 1.4rem;
+        font-weight: 300;
         text-shadow: 2px 2px 0 rgba(0, 0, 0, .1);
         max-width: 30rem;
         margin-left: auto;
@@ -974,8 +975,10 @@ a {
 
 .testimonial {
     background-color: rgba(255, 255, 255, .8);
-    padding: 0 18px 1px 18px;
+    padding: 0 15px 1px 18px;
     margin-bottom: 98px;
+    width: 100%;
+
 }
 
 @media (min-width: 1010px) {
@@ -983,6 +986,7 @@ a {
 .testimonial {
         margin-bottom: 0;
         padding: 0 1.8125rem 1px 1.8125rem
+
 }
     }
 
@@ -1020,6 +1024,75 @@ a {
         font-weight: 400;
         font-size: 0.9375rem;
         margin: .25rem 0 1rem 0;
+    }
+
+.testimonial__contact-info {
+        padding: 9px;
+        width: 100%;      
+        -webkit-transform: translateX(12%);      
+                transform: translateX(12%);
+    }
+
+@media (min-width: 530px) {
+
+.testimonial__contact-info {
+            padding: 9px;
+            width: 100%;      
+            -webkit-transform: translateX(30%);      
+                    transform: translateX(30%)
+    }
+    }
+
+@media (min-width: 1010px) {
+
+.testimonial__contact-info {
+            padding: 9px;
+            width: 20rem;
+            -webkit-transform: none;
+                    transform: none
+    }
+    }
+
+.testimonial__contact-info ul {
+            display: block;
+            list-style: none;
+        }
+
+.testimonial__contact-info ul::after{
+        content: "";
+        clear: both;
+        display: table;
+    }
+
+.testimonial__contact-info li{
+            margin-bottom: 12px;
+            padding-bottom: 9px;
+        }
+
+@media (min-width: 1010px) {
+
+.testimonial__contact-info li{
+                margin-bottom: 12px;
+                padding-bottom: 9px
+        }
+    }
+
+.testimonial__contact-info img {
+            width: 2rem;
+        }
+
+.testimonial__map {
+        width: 100%;
+        
+    }
+
+@media (min-width: 1010px) {
+
+.testimonial__map {
+            margin-top: -6rem;
+            width: 100%
+        
+    }
     }
 
 /* Do not edit modules/_sprite directly as it is generated automatically by Gulp. Instead edit gulp/templates/sprite. */
@@ -1133,11 +1206,11 @@ a {
     }
 
 .site-header {
-    padding: 10px 0;
+    padding: 12px 0;
     position: absolute;
     width: 100%;
     z-index: 2;
-    background-color: rgba(47,85,114, .3);
+    background-color: rgba(47,85,114, .4);
 }
 
 .site-header__btn-container {
@@ -1147,8 +1220,39 @@ a {
 .site-header__logo {
         position: absolute;
         top: 0;
-        padding: 25px 36px;
-        width: 20%;
+        padding: 0px 36px;
+        width: 16rem;
+    }
+
+.primary-nav--pull-right {
+        float: right;
+    }
+
+.primary-nav ul {
+        margin: 0;
+        padding: 0;
+    }
+
+.primary-nav ul::after{
+        content: "";
+        clear: both;
+        display: table;
+    }
+
+.primary-nav li{
+        list-style: none;
+        float: left;
+        padding-right: 20px;
+    }
+
+.primary-nav a {
+        color: #FFF;
+        font-size: 1.1rem;
+        text-shadow: 2px 2px 0 rgba(221, 98, 42, .2);
+        text-decoration: none;
+        font-weight: 300;
+        display: block;
+        padding: 12px 0;
     }
 
 

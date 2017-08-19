@@ -4,6 +4,7 @@
 
     &__image{
         display: block;
+        
     }
 
     &__text-content {
@@ -35,9 +36,9 @@
 
     &__subtitle {
         font-weight: 300;
-        color: $blue2;
+        color: #ff6b6b;
         text-shadow: 2px 2px 0 rgba(0, 28, 125, .1);
-        font-size: 1.5rem;
+        font-size: 1.1rem;
         margin: 0;
 
         @mixin atSmall {
@@ -46,9 +47,9 @@
     }
 
     &__description {
-        color: #fff;
-        font-size: 1.1rem;
-        font-weight: 100;
+        color: #FFF;
+        font-size: 1.4rem;
+        font-weight: 300;
         text-shadow: 2px 2px 0 rgba(0, 0, 0, .1);
         max-width: 30rem;
         margin-left: auto;
