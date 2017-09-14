@@ -2,7 +2,11 @@
     
     
     &--pull-right {
-        float: right;
+        
+        @mixin atMedium {
+            float: right;
+        }
+        
     }
     
     ul {
@@ -13,17 +17,30 @@
     
     li{
         list-style: none;
-        float: left;
-        padding-right: 20px;
+        padding-top: 6px; 
+        
+        @mixin atMedium {
+            float: left;
+            display: block;
+            padding-right: 20px;
+        }
     }
     
     a {
         color: #FFF;
-        font-size: 1.1rem;
-        text-shadow: 2px 2px 0 rgba(221, 98, 42, .2);
         text-decoration: none;
         font-weight: 300;
         display: block;
-        padding: 12px 0;
+        padding: 5px ;
+        font-size: 1rem; 
+        border-bottom: thin solid #FFF;
+        
+        @mixin atMedium {
+            font-size: 1rem;
+            padding: 12px 0;
+            background-color: transparent;
+            text-shadow: 2px 2px 0 rgba(221, 98, 42, .2);
+            border-bottom: none;
+        }
     }
 }

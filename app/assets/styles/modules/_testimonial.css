@@ -45,16 +45,10 @@
         margin: .25rem 0 1rem 0;
     }
     
-    &__contact-info {
+    &__contact-info {  
         padding: 9px;
         width: 100%;      
-        transform: translateX(12%);
-        
-        @mixin atSmall {
-            padding: 9px;
-            width: 100%;      
-            transform: translateX(30%);
-        }
+        transform: translateX(5%);
     
         
          @mixin atLarge {
@@ -82,7 +76,11 @@
         }
         
          img {
-            width: 2rem;
+            width: 1rem;
+            
+             @mixin atMedium {
+                 width: 2rem;
+             }
         }
     }
     

@@ -4,16 +4,21 @@
 
     &__image{
         display: block;
+        opacity: .93;
         
     }
 
     &__text-content {
         position: absolute;
-        top:50%;
+        top:65%;
         transform: translateY(-50%);
         left: 0;
         width:100%;
         text-align: center;
+        
+        @mixin atMedium {
+            top:50%;
+        }
     }
 
     &__title {
@@ -22,9 +27,14 @@
         text-shadow: 2px 2px 0 rgba(0, 28, 125, .6);
         margin:0;
         font-size: 2.4rem;
-
+        display: none;
+        
         @mixin atSmall {
             font-size: 5.4rem;
+        }
+        
+        @mixin atMedium {
+            display: block;
         }
 
     }
@@ -61,7 +71,6 @@
     }
 
     &__img {
-      width:15%;
-      height: auto;
+      
     }
 }
