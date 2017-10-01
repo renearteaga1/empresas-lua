@@ -12,9 +12,13 @@
         height: auto;
         background-color: rgba($mainBlue, .4);
         padding: 12px 0;
-        position: absolute;
+        position: fixed;
         width: 100%;
         z-index: 2;
+        
+        &--dark {
+            background-color: rgba(23, 51, 72, .85);
+        }
     }
     
     &__btn-container {
@@ -38,12 +42,19 @@
         width: 16rem;
         z-index: 2;
         transition: top .36s ease-out;
+        transition: background-color .36s ease-out;
         
         @mixin atMedium {
             top: 0;
             padding: 0px 36px;
             left:auto;
             transform: translateX(0);
+            
+            .site-header--dark & {
+                background-color: rgba(229, 231, 234, .76);
+                padding: 0;
+                transform: scale(.73);
+            }
         }
         
         &--is-expanded {
