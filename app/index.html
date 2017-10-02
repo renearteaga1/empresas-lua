@@ -8,6 +8,7 @@
   <meta name="description" content="Your clarity. One trip away. We create soul restoring journeys that inspire you to be you.">
 
     <link rel="stylesheet" href="temp/styles/styles.css">
+    <script src="/temp/scripts/Vendor.js"></script>
     
 </head>
 <body>
@@ -25,9 +26,10 @@
                 </div>
             <nav class="primary-nav primary-nav--pull-right">
               <ul>
-                <li><a href="#our-beginning" id="our-beginning-link">Negocios</a></li>
-                <li><a href="#features" id="features-link">Nosotros</a></li>
+                <li><a href="#our-beginning" id="our-beginning-link">Nosotros</a></li>
+                <li><a href="#features" id="features-link">Compromiso</a></li>
                 <li><a href="#testimonials" id="testimonials-link">Encuéntranos</a></li>
+                <li><a href="#" id="documentos-link">Documentos Electrónicos</a></li>
               </ul>
             </nav>
         </div>
@@ -40,7 +42,7 @@
         <source srcset="assets/images/full-large.jpg 1625w, assets/images/full.jpg 1625w" media="(min-width: 1380px)">
         <source srcset="assets/images/full-medium.jpg 1280w, assets/images/full-medium.jpg 1280w" media="(min-width: 990px)">
         <source srcset="assets/images/full-small.jpg 990w, assets/images/full-small.jpg 990w" media="(min-width: 640px)">
-        <img srcset="assets/images/full-smaller.jpg 640w, assets/images/full-smaller-hi-dpi.jpg 1180w" class="large-hero__image">
+        <img class="lazyload" data-srcset="assets/images/full-smaller.jpg 640w, assets/images/full-smaller-hi-dpi.jpg 1180w" class="large-hero__image">
     </picture>
     <div class="large-hero__text-content">
         <div class="wrapper">
@@ -64,9 +66,9 @@
             <div class="row__medium-6 row__medium-6--larger row__b-margin-until-medium">
                 <div class="actividades"><a href="#">
                     <picture>
-                        <source srcset="assets/images/valgas-inicio--medium.jpg" media="(min-width: 1020px)">
-                        <source srcset="assets/images/valgas-inicio--small.jpg" media="(min-width: 800px)">
-                        <img src="assets/images/valgas-inicio--medium-hi-dpi.jpg" alt="Petroecuador, El Carmen">
+                        <source data-srcset="assets/images/valgas-inicio--medium.jpg" media="(min-width: 1020px)">
+                        <source data-srcset="assets/images/valgas-inicio--small.jpg" media="(min-width: 800px)">
+                        <img class="lazyload" data-src="assets/images/valgas-inicio--medium-hi-dpi.jpg" alt="Petroecuador, El Carmen">
                     </picture></a>
                     <div class=actividades__description>
                         <a href="#"><h2 class="headline headline--centered"><strong>Estaciones de servicio</strong></h2></a>
@@ -81,9 +83,9 @@
                     <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum velit esse cillum <strong>dolore eu fugiat.</strong></p> -->
                     <div href="#" class="actividades"><a href="#">
                     <picture>
-                        <source srcset="assets/images/ganaderia-inicio--medium.jpg" media="(min-width: 1020px)">
-                        <source srcset="assets/images/ganaderia-inicio--small.jpg" media="(min-width: 800px)">
-                        <img src="assets/images/ganaderia-inicio--medium-hi-dpi.jpg" alt="Petroecuador, El Carmen">
+                        <source data-srcset="assets/images/ganaderia-inicio--medium.jpg" media="(min-width: 1020px)">
+                        <source data-srcset="assets/images/ganaderia-inicio--small.jpg" media="(min-width: 800px)">
+                        <img class="lazyload" data-src="assets/images/ganaderia-inicio--medium-hi-dpi.jpg" alt="Petroecuador, El Carmen">
                         </picture></a>
                     <div class=actividades__description>
                         <a href="#"><h2 class="headline headline--centered"><strong>Agropecuaria</strong></h2></a>
@@ -102,25 +104,25 @@
         <div class="row row--gutters-large generic-content-container">
             <div class="row__medium-6">
                 <div class="feature-item">
-                    <img class="feature-item__icon feature-item__img" src="assets/images/icons/sostenible.svg">
+                    <img class="feature-item__icon feature-item__img lazyload" data-src="assets/images/icons/sostenible.svg">
                     <h3 class="feature-item__title">Cuidamos el ambiente</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed luctus, nunc vitae malesuada ornare, massa massa volutpat est, sit amet sollicitudin purus purus vel nisi. </p>
                 </div>
                 <div class="feature-item">
-                    <img class="feature-item__icon feature-item__img" src="assets/images/icons/quality.svg">
+                    <img class="feature-item__icon feature-item__img lazyload" data-src="assets/images/icons/quality.svg">
                     <h3 class="feature-item__title">Calidad</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed luctus, nunc vitae malesuada ornare, massa massa volutpat est, sit amet sollicitudin purus purus vel nisi.</p>
                 </div>    
             </div>
             <div class="row__medium-6">
                 <div class="feature-item">
-                    <img class="feature-item__icon feature-item__img" src="assets/images/icons/teamwork.svg">
+                    <img class="feature-item__icon feature-item__img lazyload" data-src="assets/images/icons/teamwork.svg">
                     <h3 class="feature-item__title">Un solo Equipo</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed luctus, nunc vitae malesuada ornare, massa massa volutpat est, sit amet sollicitudin purus purus vel nisi.</p>
                 </div>
 
                 <div  class="feature-item">
-                    <img class="feature-item__icon feature-item__img" src="assets/images/icons/trust.svg">
+                    <img class="feature-item__icon feature-item__img lazyload" data-src="assets/images/icons/trust.svg">
                     <h3 class="feature-item__title">Confianza</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed luctus, nunc vitae malesuada ornare, massa massa volutpat est, sit amet sollicitudin purus purus vel nisi.</p>
                 </div>
@@ -156,7 +158,7 @@
                     </div>
                     <h3 class="testimonial__title"></h3>
                     <h4 class="testimonial__subtitle"></h4>-->
-                    <iframe class="testimonial__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d444.60555579004455!2d-79.20430494629238!3d-0.2785350256662406!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xd9818326ba4caf9b!2sGasolinera+Los+Anturios+-+Petroecuador!5e0!3m2!1ses!2sec!4v1503103807704" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                    <iframe class="lazyload testimonial__map" data-src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d444.60555579004455!2d-79.20430494629238!3d-0.2785350256662406!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xd9818326ba4caf9b!2sGasolinera+Los+Anturios+-+Petroecuador!5e0!3m2!1ses!2sec!4v1503103807704" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
                 </div>
             </div>
             <!--<div class="row__large-4">
@@ -179,7 +181,7 @@
   
   <div class="modal">
     <div class="modal__inner">
-      <h2 class="section-title section-title--blue section-title--less-margin"><img class="section-title__icon section-title__img--contact" src="assets/images/icons/mail.svg"><strong>Contáctanos</strong></h2>
+      <h2 class="section-title section-title--blue section-title--less-margin"><img class="section-title__icon section-title__img--contact lazyload" data-src="assets/images/icons/mail.svg"><strong>Contáctanos</strong></h2>
     <div class="wrapper wrapper--narrow">
       <p class="modal__description">Nos gustaría saber de ti. Por favor déjanos tu comentario o sugerencia.</p>
     </div>
