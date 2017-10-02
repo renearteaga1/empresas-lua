@@ -21,7 +21,7 @@
         </div>
         <div class="site-header__menu-content">
                 <div class="site-header__btn-container">
-                    <a href="#" class="btn">Contáctanos</a>
+                    <a href="#" class="btn open-modal">Contáctanos</a>
                 </div>
             <nav class="primary-nav primary-nav--pull-right">
               <ul>
@@ -174,8 +174,43 @@
   </div>
 
   <footer class="site-footer">
-    <p><span class="site-footer__text">Copyright &copy; 2016 EmpresasLUA. All rights reserved.</span> <a href="#" class="btn btn--orange">Contactanos</a></p>
+    <p><span class="site-footer__text">Copyright &copy; 2016 EmpresasLUA. All rights reserved.</span> <a href="#" class="btn btn--orange open-modal">Contáctanos</a></p>
   </footer>
+  
+  <div class="modal">
+    <div class="modal__inner">
+      <h2 class="section-title section-title--blue section-title--less-margin"><img class="section-title__icon section-title__img--contact" src="assets/images/icons/mail.svg"><strong>Contáctanos</strong></h2>
+    <div class="wrapper wrapper--narrow">
+      <p class="modal__description">Nos gustaría saber de ti. Por favor déjanos tu comentario o sugerencia.</p>
+    </div>
+    <div class="contact-form">
+        
+          <div id="error"><? echo $error.$successMessage;?></div>
+
+          <form method="post">
+            <div class="contact-form__group">
+              <label for="email">Correo electrónico</label>
+            
+              <input type="email" class="form-control" id="email" name="email" placeholder="Ingresa tu correo electrónico">
+              <p class="contact-form--muted">No compartimos tu correo electrónico.</p>
+            </div>
+            
+            <div class="contact-form__group">
+              <label for="subject">Tema</label>
+              <input type="text" class="form-control" id="subject" name="subject" placeholder="Tema del mensaje">
+            </div>
+
+            <div class="contact-form__group">
+              <label for="content">Déjanos tu mensaje</label>
+              <textarea class="form-control" id="content" name="content" rows="3" placeholder="Déjanos tu mensaje"></textarea>
+            </div>
+
+            <button type="submit" id="submit" class="btn btn--submit">Enviar</button>
+          </form>
+    </div>
+    </div>
+    <div class="modal__close">X</div>
+  </div>
   <script src="/temp/scripts/App.js"></script>
 </body>
 </html>

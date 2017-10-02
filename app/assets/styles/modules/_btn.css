@@ -22,4 +22,20 @@
             padding: .75rem 1.2rem;
         }
     }
+  
+  &--submit {
+    background-color: $mainBlue;
+    color: #FFF;
+    text-decoration: none;
+    padding: .7rem 4rem;
+    font-size: 1.05rem;
+    border: 1px solid;
+    border-radius: 8px;
+    
+    &:hover {
+        border-color: rgba(158, 195, 255, 0.8);
+        box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(126, 158, 195, 255.6);
+        outline: 0 none;
+      }
+  }
 }
