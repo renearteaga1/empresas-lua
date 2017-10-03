@@ -9,15 +9,22 @@
     &__icon {
         display: block;
         margin: 0 auto;
+      
+      
         @mixin atSmall {
             position: absolute;
             left: 0;
+            margin: 0 auto;
         }
     }
     
      &__img {
       width:12%;
       height: auto;
+    }
+    
+    &__img2 {
+
     }
     
     &__title {
