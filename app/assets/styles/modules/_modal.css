@@ -36,6 +36,11 @@
       font-weight: 300;
       line-height: 1.65;
     }
+    
+    &--no-visible {
+    opacity: 0;
+    visibility: hidden;
+  }
   }
   
   & h2 {

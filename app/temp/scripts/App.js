@@ -11741,6 +11741,8 @@ var Modal = function () {
     this.modal = (0, _jquery2.default)(".modal");
     this.closeModalButton = (0, _jquery2.default)(".modal__close");
     this.events();
+    this.alertTrigger = (0, _jquery2.default)(".alert");
+    this.description = (0, _jquery2.default)(".modal__description");
   }
 
   _createClass(Modal, [{
@@ -11772,6 +11774,11 @@ var Modal = function () {
     key: "closeModal",
     value: function closeModal() {
       this.modal.removeClass("modal--is-visible");
+    }
+  }, {
+    key: "hideDescription",
+    value: function hideDescription() {
+      this.description.addClass("modal__description--no-visible");
     }
   }]);
 
