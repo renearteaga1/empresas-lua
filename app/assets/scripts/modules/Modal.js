@@ -6,6 +6,8 @@ class Modal {
     this.modal = $(".modal");
     this.closeModalButton = $(".modal__close");
     this.events();
+    this.alertTrigger = $(".alert");
+    this.description = $(".modal__description");
   }
   
   events() {
@@ -33,6 +35,10 @@ class Modal {
   
   closeModal() {
     this.modal.removeClass("modal--is-visible");
+  }
+  
+  hideDescription() {
+    this.description.addClass("modal__description--no-visible");
   }
 }
 

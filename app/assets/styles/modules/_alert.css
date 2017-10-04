@@ -1,0 +1,14 @@
+.alert {
+  
+  &--danger{
+    background-color: rgba(255, 204, 204, .79);
+    color: #a55959;
+    font-size: 1.1rem;
+  }
+  
+  &--succes{
+    background-color: rgba(194, 237, 203, .79);
+    color: #44704d;
+    font-size: 1.1rem;
+  }
+}
